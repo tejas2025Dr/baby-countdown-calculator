@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDD & POG Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <center><h1>Baby Countdown!</h1></center>
+    
+    <center><p class="subtitle">When was your last period? 🩷</p></center>
+    <center><input type="date" id="lmpDate" /></center>
+    <br>
+    <center><button onclick="calculate()">🐣 Deliver!</button></center>
+
+    <div class="result" id="resultBox">
+      <center><h2>🎉 Here's the Scoop!</h2></center>
+      <center><p><strong>🗓 Estimated Due Date:</strong> <span id="edd"></span></p></center>
+      <center><p><strong>📆 Gestational Age:</strong> <span id="pog"></span></p></center>
+      <center><p><strong>🤰🏻 Current Stage:</strong> <span id="trimester"></span></p></center>
+      <div class="advice-section">
+        <center><h3>📋 Recommended Care</h3></center>
+        <div id="advice"></div>
+        <br>
+        <center><small>💡 Remember, this is an estimate. Always consult your healthcare provider for personalized advice.</small></center>
+        <br>
+        <center><div class="message-animated">A Little Miracle is on the way! ✨</div></center>
+        <center><div class="message-animated delay">Take Care and Enjoy Every Moment. 😊</div></center>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
